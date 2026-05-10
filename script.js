@@ -53,7 +53,7 @@ if (contactForm) {
         }
       } catch (error) {
         if (formNote) {
-          formNote.textContent = "Sorry, the message could not be sent. Please email database@gwl.nz directly.";
+          formNote.textContent = "Sorry, the message could not be sent. Please email info@gwl.nz directly.";
         }
       }
       return;
@@ -68,7 +68,7 @@ if (contactForm) {
       message
     ].join("\n");
 
-    const mailto = new URL("mailto:database@gwl.nz");
+    const mailto = new URL("mailto:info@gwl.nz");
     mailto.searchParams.set("subject", `Website enquiry from ${firstName} ${lastName}`.trim());
     mailto.searchParams.set("body", body);
 

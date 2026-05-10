@@ -17,4 +17,4 @@ Static website built from `DRAFT Website materials.docx` for GitHub Pages deploy
 4. Choose the branch, then select the repository root `/`.
 5. Save. GitHub will publish the site after the Pages build finishes.
 
-The contact form uses `mailto:info@gwl.nz` by default so it works on a fully static host. To send messages directly from the website without opening the visitor's email app, connect the form to a hosted form service endpoint and place that endpoint in the form `action` attribute in `index.html`.
+The contact form uses `database@gwl.nz` as the recipient. It is currently connected to FormSubmit so messages can be sent from static hosting. If the form endpoint is removed, the script falls back to opening an email draft.
